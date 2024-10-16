@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-yellow-400 rounded-full px-5 py-3 uppercase text-sm font-semibold hover:bg-yellow-300 transition-all duration-300;
+  }
+
+  .btn-trans {
+    @apply btn bg-transparent border border-stone-400 hover:bg-stone-300;
+  }
+
+  .btn-sm {
+    @apply btn py-2 px-4 text-xs;
+  }
+
+  .navbtn {
+    @apply py-2 px-4 uppercase tracking-widest;
+  }
+
+  .input {
+    @apply rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 placeholder:text-stone-400 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3;
+  }
+}
+
+.active button {
+  border-bottom: 4px solid red;
+}
